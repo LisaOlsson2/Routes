@@ -7,22 +7,25 @@ public class Player : CommonControlls
     [SerializeField]
     GameObject inventory;
 
+    readonly int[] timeScales = { 1, 0 };
+
     public override void Update()
     {
-        base.Update();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            inventory.SetActive(!inventory.activeSelf);
+            Time.timeScale = timeScales[(int)Time.timeScale];
+        }
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            foreach (Animator animator in FindObjectsOfType<Animator>())
+            foreach (Animator animator in GetComponentsInChildren<Animator>())
             {
                 animator.SetTrigger("Change");
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            inventory.SetActive(!inventory.activeSelf);
-        }
+        base.Update();
 
         if (Input.GetKey(up))
         {

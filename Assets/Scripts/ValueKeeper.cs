@@ -6,13 +6,20 @@ using UnityEngine.SceneManagement;
 public class ValueKeeper : MonoBehaviour
 {
     int save;
-    char[] progress;
-
+    readonly List<char> progress = new();
     public void StartGame(int saveNumber, string scene)
     {
         DontDestroyOnLoad(gameObject);
         save = saveNumber;
-        progress = PlayerPrefs.GetString("save" + save).ToCharArray();
+
+        char[] cArray;
+        cArray = PlayerPrefs.GetString("save" + save).ToCharArray();
+
+        foreach (char c in cArray)
+        {
+            progress.Add(c);
+        }
+
         SceneManager.LoadScene(scene);
     }
 
