@@ -31,4 +31,9 @@ public class Buttons : MonoBehaviour
         save.GetChild(0).gameObject.SetActive(true);
         PlayerPrefs.SetString("save" + save.GetSiblingIndex(), "");
     }
+    public void Quit()
+    {
+        PlayerPrefs.Save();
+        Application.Quit();
+    }
 }

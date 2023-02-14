@@ -10,7 +10,7 @@ public class ValueKeeper : MonoBehaviour
 
     public void StartGame(int saveNumber, string scene)
     {
-        //DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
         save = saveNumber;
         progress = PlayerPrefs.GetString("save" + save).ToCharArray();
         SceneManager.LoadScene(scene);
