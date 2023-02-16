@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 
 public class TimeKeeper : MonoBehaviour
@@ -14,12 +13,12 @@ public class TimeKeeper : MonoBehaviour
 
     Text text;
 
-    GameObject dayLight;
+    [SerializeField]
+    GameObject nightLights, dayShades;
 
     private void Start()
     {
         text = GetComponent<Text>();
-        dayLight = GameObject.Find("DayLight");
     }
 
     private void Update()
@@ -49,7 +48,8 @@ public class TimeKeeper : MonoBehaviour
 
         if ((hours >= 6 && hours < 18 && night) || ((hours >= 18 || hours < 6) && !night))
         {
-            dayLight.SetActive(night);
+            nightLights.SetActive(!night);
+            dayShades.SetActive(night);
             night = !night;
         }
 
