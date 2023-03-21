@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 875313964119c6542a4c1e8e41fcc86d, type: 3}
   m_Name: LightTile
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: e258fdce62215fb4eb36a9f31fbed9e9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.19607843}
   m_Transform:
     e00: 1
     e01: 0

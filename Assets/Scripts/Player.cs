@@ -9,7 +9,7 @@ public class Player : CommonControlls
 
     readonly int[] timeScales = { 1, 0 };
 
-    public override void Update()
+    protected override void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {

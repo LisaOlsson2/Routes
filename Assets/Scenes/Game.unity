@@ -3456,7 +3456,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7a043c16a04ae4945917c32cd936379a, type: 3}
-  m_Color: {r: 0.3843603, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6349,7 +6349,7 @@ Tilemap:
       e33: 1
   m_TileColorArray:
   - m_RefCount: 131
-    m_Data: {r: 1, g: 1, b: 1, a: 1}
+    m_Data: {r: 1, g: 1, b: 1, a: 0.19607843}
   m_TileObjectToInstantiateArray:
   - m_RefCount: 130
     m_Data: {fileID: 3992977693275113931, guid: b9b79935fa66d73478ccc55829d4660a, type: 3}
@@ -6649,7 +6649,7 @@ Tilemap:
       e33: 1
   m_TileColorArray:
   - m_RefCount: 2
-    m_Data: {r: 1, g: 1, b: 1, a: 1}
+    m_Data: {r: 1, g: 1, b: 1, a: 0.19607843}
   m_TileObjectToInstantiateArray:
   - m_RefCount: 2
     m_Data: {fileID: 5085802266180937751, guid: 579717ee1c31f6548a9a603672295214, type: 3}

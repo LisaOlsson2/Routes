@@ -5,7 +5,7 @@ using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
-public class CustomClasses: MonoBehaviour
+public abstract class CustomClasses: MonoBehaviour
 {
 #if UNITY_EDITOR
 

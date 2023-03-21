@@ -17,7 +17,7 @@ public class PlayerPlayer : CommonControlls
         normalScale = transform.localScale;
     }
 
-    public override void Update()
+    protected override void Update()
     {
         base.Update();
 

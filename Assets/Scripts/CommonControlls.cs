@@ -6,12 +6,12 @@ public class CommonControlls : MonoBehaviour
 {
     readonly KeyCode right = KeyCode.RightArrow;
     readonly KeyCode left = KeyCode.LeftArrow;
-    public readonly KeyCode up = KeyCode.UpArrow;
-    public readonly KeyCode down = KeyCode.DownArrow;
+    protected readonly KeyCode up = KeyCode.UpArrow;
+    protected readonly KeyCode down = KeyCode.DownArrow;
 
-    public readonly float speed = 4;
+    protected readonly float speed = 4;
 
-    public virtual void Update()
+    protected virtual void Update()
     {
         if (Input.GetKey(right))
         {
